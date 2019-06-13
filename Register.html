@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="LoginStyles.css">
+    <title>Register Page</title>
+</head>
+
+<body>
+    <div>
+        <div class="preloader">
+            <img src="Bars-2s-196px.gif" alt="Preloader">
+        </div>
+        <div class="container" style="background-image: url('Img/RegBG.jpg');">
+            <div class="formWrapper">
+                <div class="back">
+                    <a href="Login.html"> <i class="fas fa-arrow-circle-left"></i> </a>
+                </div>
+                <div class="formTitle">
+                    <h1>Sign Up</h1>
+                </div>
+                <div class="profilePict">
+                    <i class="fas fa-user-astronaut"></i>
+                </div>
+                <form class="loginForm">
+                    <div class="usernameBox">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username" class="username">
+                        <span class="error"></span>
+                        <i class="fas fa-exclamation-circle" style='color: #c7262e;'></i>
+                    </div>
+                    <div class="usernameBox">
+                        <i class="fas fa-envelope-open-text"></i>
+                        <input type="text" placeholder="Email" class="email">
+                        <span class="error"></span>
+                        <i class="fas fa-exclamation-circle" style='color: #c7262e;'></i>
+                    </div>
+                    <div class="passwordBox">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" class="password">
+                        <i class="fas fa-exclamation-circle" style='color: #c7262e;'></i>
+                        <span class="error"></span>
+                    </div>
+                    <div class="passwordBox">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Confirm Password" class="confPassword">
+                        <i class="fas fa-exclamation-circle" style='color: #c7262e;'></i>
+                        <span class="error"></span>
+                    </div>
+                    <div class="button">
+                        <a class="checkEmpty"><input type="button" value="Sign Up"></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <script src="../all.js"></script>
+    <script src="preloader.js"></script>
+    <script src="Reg.js"></script>
+</body>
+
+</html>

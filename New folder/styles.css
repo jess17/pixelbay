@@ -1,0 +1,301 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Permanent+Marker&display=swap|Asap|Lobster');
+/* font-family: 'Permanent Marker', cursive; */
+
+
+:root{
+    --azureishWhite: #DBF9F4;
+    --teaGreen: #B9FFB7;
+    --charcoal: #2E4052;
+    --mustard: #FFC857;
+    --seaFoamGreen: #98D9C2;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Asap', sans-serif;
+    /* scroll-behavior: smooth; */
+}
+
+body, section, div{
+    display: block;
+}
+
+html, .container{
+    height:100%;
+    width: 100%;
+}
+
+.preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--azureishWhite);
+}
+
+.preloader img{
+    height:35vh;
+}
+
+.logo img{
+    height: 40px;
+}
+
+header{
+    position: fixed;
+    z-index: 99;
+    width:100%;
+}
+
+.tabs, .logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    margin:auto 8px;
+}
+
+.navBar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background: #2E4052;
+    height: 53px;
+    /* align-items: center; */
+}
+
+.tab{
+    margin: 5px 15px;
+    display:block;
+    align-items: center;
+}
+
+.btn{
+    display: flex;
+    margin:5px 5px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--mustard);
+    outline: none;
+}
+
+li{
+    list-style: none;
+}
+
+
+.tab .underline{
+    background: var(--azureishWhite);
+    width:0;
+    height: 2px;
+    transition: width .3s .2s ease;
+  }
+  
+.tab a:hover~.underline, .tab a:hover{
+    width:100%;
+    color:var(--azureishWhite);
+}
+
+input[type="button"] {
+    background: transparent;
+    border: none;
+    background-color: var(--seaFoamGreen);
+    border-radius: 2rem;
+    height: 2rem;
+    width: 7rem;
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
+
+/*--------------- VIDEO SECTION--------------- */
+
+.pointer{
+    cursor: pointer;
+}
+
+.btnStyle{
+    color:var(--azureishWhite);
+    height:3rem !important;
+    width:3rem !important;
+}
+
+.videoSection{
+    height:100vh;
+    width: 100vw;
+    /* background: var(--charcoal); */
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    overflow:scroll;
+}
+
+.LRBtn{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    /* z-index:-1; */
+}
+
+.slider{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    left: 0;
+    transition: all 1s ease;
+}
+
+.slide, .videoSection{
+    width: 100vw;
+    /* left: 0;
+    right: 0; */
+    margin: 0 5px 0 0;
+    /* min-width: 200px;
+    height: 200px;
+    margin-right: 1rem; */
+    display: inline-block;
+    height: 100vh;
+}
+
+
+/* .videoItem{
+    position: absolute;
+    width: 100vw;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.videoItem2{
+    width: 100vw;
+    left: 0;
+    right: 0;
+    margin: auto;
+} */
+
+ /*-------------------- END OF VIDEO SECTION -------------*/
+
+.fontPermanentMarker{
+    font-family: 'Permanent Marker', cursive;
+}
+
+.bigFont{
+    font-size: 40px;
+}
+
+/* -----------------CSS FOR IMAGE-SPORTS SECTION---------- */
+.imgWrapper{
+    margin: 5px;
+
+}
+.image{
+    overflow: hidden;
+    /* float: right; */
+    /* position: relative; */
+    /* max-width: 100vw;
+    min-height: 40vw; */
+}
+
+.imageSize{
+    width: 100%;
+    height: 100%;
+    display: block;
+    /* margin: 5px; */
+}
+
+.section3{
+    margin:2vw;
+}
+
+@media screen and (min-width:576px){
+    .imgWrapper{
+        display: grid;
+        grid-gap: 10px;
+        /* padding: 1rem; */
+    }
+}
+
+@media screen and (min-width:992px){
+    .imgWrapper{
+        /* display: grid; */
+        /* width:50vw; */
+        /* height:100vh; */
+        
+        grid-template: 
+        [row1-start] "one one one two three three three" auto [row1-end]
+        [row2-start] "one one one two three three three" auto [row2-end]
+        [row3-start] "one one one two three three three" auto [row2-end]
+        [row4-start] "one one one four four four four" 200px [row3-end]
+        [row5-start] "one one one four four four four" 200px [row4-end]
+        [row6-start] "five five five five . six six" 350px [row5-end]
+        [row7-start] "five five five five seven eight eight" 250px [row6-end]
+        [row8-start] "five five five five seven eight eight" 250px [row7-end]
+        / 8.4vw 8.4vw 8.4vw 16.12vw 16.12vw 16.12vw 16.12vw; 
+        /* grid-template-columns: repeat(7, 13.2vw);
+        grid-template-rows: repeat(7, 150px); */
+        /* grid-template-areas: "one one one two three three three" 
+        "one one one two three three three"
+        "one one one two three three three"
+        "one one one four four four four"
+        "one one one four four four four"
+        "five five five five . six six"
+        "five five five five seven eight eight"
+        "five five five five seven eight eight"; */
+    }
+
+    .img1{
+        grid-area: one;
+    }
+    
+    .img2{
+        grid-area: two;
+    }
+    
+    .img3{
+        grid-area:three;
+    }
+    
+    .img4{
+        grid-area: four;
+    }
+    
+    .img5{
+        grid-area: five;
+    }
+    
+    .img6{
+        grid-area: six;
+    }
+    
+    .img7{
+        grid-area: seven;
+    }
+    
+    .img8{
+        grid-area: eight;
+        align-self: center;
+    }
+}
+
+/* -----------------END OF CSS FOR IMAGE-SPORTS SECTION---------- */
+
+/* -----------------CSS FOR IMAGE-NIGHT LIFE SECTION---------- */
+
+

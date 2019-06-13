@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Main Page</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <!-- HEADER SECTION -->
+    <div class="preloader">
+      <img src="Bars-2s-196px.gif" alt="Preloader">
+    </div>
+    <header>
+      <section id="header" class="section1">
+        <nav class="navBar">
+          <div class="logo">
+            <a href="index.html"><img src="Img/camera.png" alt="Logo"></a>
+          </div>
+          <ul class="tabs">
+            <li class="tab"><a href="index.html">Home</a>
+              <div class="underline"></div>
+            </li>
+            <li class="tab"><a href="#">Images</a>
+              <div class="underline"></div>
+            </li>
+            <li class="tab"><a href="#">Projects</a>
+              <div class="underline"></div>
+            </li>
+            <li class="tab"><a href="#">Our Team</a>
+              <div class="underline"></div>
+            </li>
+            <li class="tab"><a href="#">Contact</a>
+              <div class="underline"></div>
+            </li>
+            <div class="btn">
+              <a href="MemoryCard.html" class="tab btn"><input type="button" name="memoryGame" value="Memory Game"
+                  class="memoryGameBtn"></a>
+              <a href="Login.html" class="tab btn"><input type="button" name="login" value="Log in"
+                  class="loginBtn"></a>
+              <a href="Register.html" class="tab btn"><input type="button" name="register" value="Register"
+                  class="regBtn"></a>
+            </div>
+          </ul>
+        </nav>
+        <span class="slogan"></span>
+      </section>
+    </header>
+    <!-- END OF HEADER SECTION -->
+    <!-- VIDEO SECTION -->
+    <section class="videoSection">
+      <ul class="slider" data-target="slider">
+        <li class="slide" data-target="slide">
+          <video autoplay muted loop class="videoItem">
+            <source src="./Video/Ship Cruising During Sunset.mp4" type="video/mp4"></video>
+        </li>
+        <li class="slide" data-target="slide">
+          <video autoplay muted loop class="videoItem">
+            <source src="./Video/Milky Way Glowing At Night.mp4" type="video/mp4"></video>
+        </li>
+        <li class="slide" data-target="slide">
+          <video autoplay muted loop class="videoItem">
+            <source src="./Video/Pexels Videos 4703.mp4"></video>
+        </li>
+      </ul>
+      <div class="LRBtn">
+        <div data-event="slideL"><i class="fas fa-chevron-left btnStyle pointer"></i></div>
+        <div data-event="slideR"><i class="fas fa-chevron-right R btnStyle pointer"></i></div>
+      </div>
+    </section>
+    <!-- END OF VIDEO SECTION -->
+    <!-- IMAGE SECTION -->
+    <section class="section3">
+      <div class="tabTitle">
+        <h1 class="fontPermanentMarker bigFont">Images</h1>
+      </div>
+      <div class="sectTitle">
+        <h2>Sports</h2>
+      </div>
+      <div class="imgWrapper">
+        <div class="image img1">
+          <img class="imageSize" src="./Img/Sports/basketball-court.jpg" alt="basketball-court">
+          <a href="#" class="zoomIn">
+            <i class="fas fa-times"></i>
+          </a>
+        </div>
+        <div class="image img2">
+          <img class="imageSize" src="./Img/Sports/bicycle.jpg" alt="bicycle">
+          <a href="#" class="zoomIn">
+            <i class="fas fa-times"></i>
+          </a>
+        </div>
+        <div class="image img3">
+          <img class="imageSize" src="./Img/Sports/surf.jpg" alt="surf">
+          <a href="#" class="zoomIn">
+            <i class="fas fa-times"></i>
+          </a>
+        </div>
+        <div class="image img4">
+          <img class="imageSize" src="./Img/Sports/swim.jpg" alt="swim">
+          <a href="#" class="zoomIn">
+            <i class="fas fa-times"></i>
+          </a>
+        </div>
+        <div class="image img5">
+          <img class="imageSize" src="./Img/Sports/sky.jpg" alt="sky">
+          <a href="#" class="zoomIn">
+            <i class="fas fa-times"></i>
+          </a>
+        </div>
+        <div class="image img6">
+          <img class="imageSize" src="./Img/Sports/football.jpg" alt="football">
+          <a href="#" class="zoomIn">
+            <i class="fas fa-times"></i>
+          </a>
+        </div>
+        <div class="image img8">
+          <img class="imageSize" src="./Img/Sports/yoga.jpg" alt="yoga">
+          <a href="#" class="zoomIn">
+            <i class="fas fa-times"></i>
+          </a>
+        </div>
+        <div class="image img7">
+          <img class="imageSize" src="./Img/Sports/golf.jpg" alt="golf">
+          <a href="#" class="zoomIn">
+            <i class="fas fa-times"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- END OF IMAGE SECTION -->
+  </div>
+
+
+  <script src="preloader.js"></script>
+  <script src="slider.js"></script>
+  <script src="../all.js"></script>
+</body>
+
+</html>
