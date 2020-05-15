@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Lobster|Permanent+Marker&display=swap|Barlow|Asap');
+
+:root{
+    --azureishWhite: #DBF9F4;
+    --teaGreen: rgb(185, 254, 183);
+    --charcoal: rgb(46, 64, 82);
+    --transCharcoal:rgb(46, 64, 82, 0.6);
+    --mustard: #FFC857;
+    --seaFoamGreen: #98d9c2;
+    --transSeaFoamGreen: rgb(152, 217, 194, 0.7);
+    --smokyBlack:#0D090A;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* scroll-behavior: smooth; */
+    
+}
+.defFont{
+    font-family: 'Asap', sans-serif;
+}
+
+.bigFont{
+    font-size:30px;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+.preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--azureishWhite);
+}
+.preloader img{
+    height:35vh;
+}
+
+.container{
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    position: fixed;
+    top:0;
+    left:0; 
+    object-fit: cover;
+}
+
+.formWrapper{
+    width: 35vw;
+    height: 60vh;
+    justify-content: center;
+    display: grid;
+    background-color: var(--transCharcoal);
+    border-radius: 8px;
+    position: relative;
+}
+
+/* .loginForm img{
+    width: 3rem;
+    height: 3rem;
+}
+
+.profilePict img{
+    width: 5rem;
+    height: 3rem;
+} */
+
+.formTitle{
+    font-family: 'Lobster', cursive;
+    margin:auto;
+    font-size: 25px;
+    color: var(--azureishWhite);
+    letter-spacing: 3px;
+}
+
+.profilePict{
+    margin: auto;
+}
+
+
+.username, .email, .password, .password2, .confPassword {
+    max-width: 18vw;
+    min-height: 5vh;
+    background: transparent;
+    border: none;
+    margin: 0 1vw;
+    text-align: center;
+    border-bottom: 2px solid var(--azureishWhite);
+    outline: none;
+    color:var(--azureishWhite)
+}
+
+.password2{
+    border-bottom: 2px solid var(--charcoal);
+}
+
+::placeholder{
+    color: var(--azureishWhite);
+}
+
+.password2::placeholder{
+    color: var(--charcoal);
+}
+
+.usernameBox, .passwordBox {
+    display: flex;
+    /* position: relative; */
+    align-items: center;
+    height: 3vh;
+    margin: 1rem auto;
+}
+
+.button {
+    display: flex;
+    justify-content: space-around;
+    margin: 0.5rem auto;
+    width: 22vw;
+    
+}
+
+.forgotButton {
+    display: flex;
+    justify-content: center;
+}
+
+form.loginForm {
+    width: 35vw;
+    min-width: 15rem;
+    /* min-height: 60vh; */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="button"] {
+    background: transparent;
+    border: none;
+    background-color: var(--transSeaFoamGreen);
+    border-radius: 2rem;
+    height: 2rem;
+    width: 5rem;
+    color: white;
+    outline:none;
+    cursor: pointer;
+}
+
+.fa-user, .fa-lock, .fa-envelope-open-text, .fa-arrow-circle-left, .fa-instagram, .fa-github, .fa-linkedin{
+    color:var(--azureishWhite);
+    height:1.5rem !important;
+    width:1.5rem !important;
+}
+.fa-user-astronaut{
+    color:var(--azureishWhite);
+    height:4rem !important;
+    width:4rem !important;
+}
+.forgotPass{
+    color:var(--azureishWhite);
+    width:inherit;
+    display:flex;
+    justify-content: space-around;
+    
+}
+
+a{
+    color:var(--azureishWhite);
+    text-decoration: var(--azureishWhite);
+}
+
+label, input#rememberMe{
+    cursor: pointer;
+}
+
+.back{
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
+
+.back:hover{
+    cursor: pointer;
+}
+
+input#resetPass {
+    width: 15vw;
+}
+
+#resetPass{
+    background-color:var(--charcoal) !important;
+}
+
+h1, h3{
+    color: var(--azureishWhite);
+}
+
+.longButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15rem !important; 
+    margin: 5px;
+
+}
+
+.longButtonContainer{
+    margin: auto;
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+}
+
+
+.error {
+    position: absolute;
+    right: -150px;
+    /* color: var(--azureishWhite); */
+    color: #86181d;
+    background-color: #ffdce0;
+    border-color: #cea0a5;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    /* display: block; */
+    font-size: 13px;
+    font-weight: 400;
+    padding: 5px 8px;
+    display: none;
+    width: 200px;
+    margin: -3px;
+}
+
+.show{
+    display: block;
+}
+
+
+
+.fa-exclamation-circle{
+    display: none;
+    /* display: block; */
+}
+
+.smallFont{
+    font-size: 13px;
+}
+
+.azureishWhite{
+    color:var(--azureishWhite);
+}
+
+.sosMedContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.justifyCenter{
+    margin:5px;
+    display: flex;
+    justify-content: center;
+}
+
+.fa-instagram, .fa-github, .fa-linkedin{
+    margin: 0 5px;
+}
+
+.pointer{
+    cursor: pointer;
+}
